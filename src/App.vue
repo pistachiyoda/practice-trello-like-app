@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header>
+      <h1>Trello Like App</h1>
+    </header>
+    <Todo></Todo>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todo from "./components/Todo.vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Todo
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  height: 50px;
+  color: white;
+  font-family: "Indie Flower", cursive;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100vw;
+}
+
+body {
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 </style>
